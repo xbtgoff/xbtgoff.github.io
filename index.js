@@ -44,16 +44,12 @@ function clearData() {
   document.getElementById("humidity-label").style.visibility = "hidden";
   document.getElementById("wind-label").style.visibility = "hidden";
   document.getElementById("description-label").style.visibility = "hidden";
-  document.getElementById("location").style.backgroundColor = "yellow";
-  document.getElementById("location").style.boxShadow = "0px 0px 10px 5px transparent";
 }
 
 //make a function that will create pop-up message if the user enters an invalid location; do not use alert
 function invalidLocation() {
-    document.getElementById("location").style.boxShadow = "0px 0px 10px 5px lightcoral";
-    document.getElementById("location").style.backgroundColor = "red";
+    document.getElementById("location").style.backgroundColor = "lightcoral";
     setTimeout(function() {
-      document.getElementById("location").style.backgroundColor = "yellow";
-      document.getElementById("location").style.boxShadow = "0 3px 10px transparent";
+      document.getElementById("location").style.backgroundColor = "white";
     }, 500);
 }

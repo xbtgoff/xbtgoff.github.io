@@ -10,21 +10,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-  <script src="eel.js"></script>
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
   <script src="index.js"></script>
   <div class="wrapper">
-    <header>
-      <div class="knowyourweather">
-        <span class="knowyourweather-span">knowyourweather.com</span>
-      </div>
-    </header>
     <main>
+      <div class="cloud-image">
+        <img src="./images/cloud.png" alt="cloud" class="img-cloud">
+      </div>
       <div class="general">
-        <img src="./images/sun.png" alt="sun" class="sun-image">
         <input type="text" placeholder="Enter your location" class="location-input" id="location">
         <input type="button" value="clear" id="clear" onclick="clearData()" class="clear-button">
         <input type="button" value="search" id="search" onclick="getWeather()" class="search-button">
@@ -42,11 +38,6 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="footer">
-        <span class="footer-span">This site was made using the <a class="openweathermap-label" href="https://openweathermap.org/" target="_blank">openweathermap API</a></span>
-      </div>
-    </footer>
   </div>
 </body>
 

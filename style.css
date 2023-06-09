@@ -7,63 +7,30 @@ body {
   height: 100%;
   font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
   /* background: linear-gradient(to right bottom, rgb(24, 24, 24), rgb(19, 19, 19)) fixed; */
-  background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   margin: 0;
-  /* background: linear-gradient(to right bottom, rgb(225, 2, 255), rgb(109, 0, 252)) fixed; */
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  height: 100vh;
 }
 
 div {
-  background-color: rgba(202, 230, 255, 0);
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-h1 {
-  color: white;
-  background-color: rgb(174, 0, 255);
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-.knowyourweather {
-  font-family: 'Roboto Mono';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 60px;
-  /* background-color: blueviolet; */
-  color: white;
-  margin: 0;
-  font-size: 20px;
-  background: linear-gradient(to right bottom, rgb(225, 2, 255), rgb(109, 0, 252)) fixed;
-  box-shadow: 0 5px 15px 10px #585858;
-}
-
-.knowyourweather-span {
-  font-family: 'Roboto Mono';
-  margin: 0;
-  font-size: 40px;
-  color: white;
-  text-transform: uppercase;
-}
-
 .general {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin-top: 30px;
   justify-content: center;
   vertical-align: middle;
-}
-
-.sun-image {
-  width: 250px;
-  height: 250px;
-  margin-top: 1px;
-  margin-bottom: 10px;
 }
 
 .location-input {
@@ -74,33 +41,34 @@ h1 {
   height: 50px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: yellow;
+  color: rgba(45, 71, 218, 0.6);
+  box-shadow: 0 5px 10px rgba(185, 185, 185, 0.5);
+  background-color: snow;
   text-align: center;
   text-transform: uppercase;
   border-radius: 25px;
-  border: 2px solid black;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  transition: all 0.1s;
-}
-
-.location-input:hover {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  transition: all 0.1s linear;
 }
 
 .location-input::placeholder {
-  color: black;
+  color: rgba(45, 71, 218, 0.404);
 }
 
 .location-input:focus {
+  outline: 2px solid rgba(59, 88, 255, 0.39);
   width: 400px;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-
+  border-radius: 15px;
+  background-color: #ffffff;
+  transform: translateY(2px);
 }
 
-.location-input:focus::placeholder {
-  color: transparent;
+
+
+.location-input:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(2px);
 }
 
 .search-button, .clear-button {
@@ -109,25 +77,29 @@ h1 {
   width: 120px;
   height: 40px;
   border-radius: 25px;
-  border: 2px solid black;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   color: white;
   text-transform: uppercase;
   user-select: none;
-  background: linear-gradient(to right bottom, rgb(225, 2, 255), rgb(109, 0, 252));
+  box-shadow: 0 5px 10px rgba(185, 185, 185, 0.5);
   transition: all 0.1s linear;
 }
 
+.search-button {
+  background-color: aquamarine;
+}
+
+.clear-button {
+  background-color: lightcoral;
+}
+
 .search-button:hover, .clear-button:hover {
-  background: linear-gradient(to right bottom, rgb(225, 2, 255), rgb(109, 0, 252));
-  box-shadow: 0 5px #666;
-  width: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(2px);
 }
 
-.search-button:active, .clear-button:active{
-  background: linear-gradient(to right bottom, rgb(225, 2, 255), rgb(109, 0, 252));
-  box-shadow: 0 5px #666;
+.search-button:active, .clear-button:active {
   transform: translateY(4px);
 }
 
@@ -148,7 +120,7 @@ label, span{
 
 span {
   font-size: 20px;;
-  color: cyan;
+  color: rgb(148, 247, 0);
 }
 
 .weather {
@@ -163,60 +135,27 @@ span {
   height: auto;
   padding: 1em;
   color: white;
-  border: 2px solid black;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   font-size: 20px;
-  background: linear-gradient(to right bottom, rgb(225, 2, 255), rgb(109, 0, 252));
+  background: linear-gradient(to right bottom, rgba(2, 162, 255, 0.5), rgba(0, 67, 252, 0.5));
+  box-shadow: 0 5px 10px rgba(185, 185, 185, 0.5);
   transition: all 0.1s linear;
 }
 
 .weather-form:hover {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(2px);
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 60px;
-  /* background-color: blueviolet; */
-  color: white;
-  margin: 0;
-  margin-top: auto;
-  font-size: 20px;
-  background: linear-gradient(to right bottom, rgb(225, 2, 255), rgb(109, 0, 252)) fixed;
-  box-shadow: 0 -5px 15px 10px #585858;
-}
-
-.footer-span {
-  color: white;
-}
-
-.openweathermap-label {
-  font-family: 'Roboto Mono';
-  font-size: 20px;
-  color: cyan;
-  text-transform: uppercase;
+.cloud-image {
+  margin: auto;
+  width: 260px;
   margin-top: 20px;
-  text-decoration: none;
-  transition: all 0.1s linear;
+  margin-bottom: 20px;
 }
 
-.openweathermap-label:visited {
-  color: cyan;
-}
-
-.openweathermap-label:hover {
-  color: cyan;
-  text-shadow: 0 2px yellow;
+.img-cloud {
+  margin: 0;
+  width: inherit;
 }
