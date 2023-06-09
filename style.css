@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
+  height: 100%;
 }
 
 div {
@@ -36,6 +36,7 @@ div {
 .location-input {
   display: flex;
   margin:auto;
+  margin-top: 0;
   font-family: 'Roboto Mono';
   width: 350px;
   height: 50px;
@@ -43,11 +44,11 @@ div {
   padding-left: 20px;
   color: rgba(45, 71, 218, 0.6);
   box-shadow: 0 5px 10px rgba(185, 185, 185, 0.5);
-  background-color: snow;
+  background-color: white;
   text-align: center;
   text-transform: uppercase;
   border-radius: 25px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(59, 88, 255, 0.39);
   font-size: 20px;
   transition: all 0.1s linear;
 }
@@ -57,14 +58,14 @@ div {
 }
 
 .location-input:focus {
-  outline: 2px solid rgba(59, 88, 255, 0.39);
+  outline: none;
+  border: 2px solid rgba(59, 88, 255, 0.39);
+  background-color: white;
   width: 400px;
   border-radius: 15px;
   background-color: #ffffff;
   transform: translateY(2px);
 }
-
-
 
 .location-input:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -151,8 +152,8 @@ span {
 .cloud-image {
   margin: auto;
   width: 260px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .img-cloud {

@@ -46,10 +46,9 @@ function clearData() {
   document.getElementById("description-label").style.visibility = "hidden";
 }
 
-//make a function that will create pop-up message if the user enters an invalid location; do not use alert
 function invalidLocation() {
-    document.getElementById("location").style.backgroundColor = "lightcoral";
-    setTimeout(function() {
-      document.getElementById("location").style.backgroundColor = "white";
-    }, 500);
+  document.getElementById("location").style.backgroundColor = "lightcoral";
+  setTimeout(function() {
+    document.getElementById("location").style.backgroundColor = "white";
+  }, 500);
 }
