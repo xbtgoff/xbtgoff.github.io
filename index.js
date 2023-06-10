@@ -12,7 +12,7 @@ function getWeather() {
         else if (data.cod == "200") {
           console.log(data);
           document.getElementById("temp").innerHTML = (data.main.temp - 273.15).toFixed(2) + "°C";
-          document.getElementById("humidity").innerHTML = data.main.humidity;
+          document.getElementById("humidity").innerHTML = data.main.humidity + "%";
           document.getElementById("wind").innerHTML = (data.wind.speed * 3.6).toFixed(2) + "km/h";
           document.getElementById("description").innerHTML = data.weather[0].description;
           if ("temp" != "") {
