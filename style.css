@@ -3,7 +3,8 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
+  user-select: none;
   height: 100%;
   font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
   /* background: linear-gradient(to right bottom, rgb(24, 24, 24), rgb(19, 19, 19)) fixed; */
@@ -15,7 +16,15 @@ body {
 }
 
 .wrapper {
+  min-height: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+main {
+  flex: 1 1 auto;
 }
 
 div {
@@ -27,7 +36,6 @@ div {
 
 .general {
   width: 100%;
-  height: 100%;
   margin-top: 30px;
   justify-content: center;
   vertical-align: middle;
@@ -37,7 +45,7 @@ div {
   display: flex;
   margin:auto;
   margin-top: 0;
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
   width: 350px;
   height: 50px;
   padding-right: 20px;
@@ -73,7 +81,7 @@ div {
 }
 
 .search-button, .clear-button {
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
   margin-top: 20px;
   width: 120px;
   height: 40px;
@@ -105,7 +113,7 @@ div {
 }
 
 .description-label {
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: white;
   text-transform: uppercase;
@@ -113,7 +121,8 @@ div {
 }
 
 label, span{
-  font-size: 18px;
+  font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+  font-size: 20px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   margin-top: 20px;
@@ -121,7 +130,8 @@ label, span{
 
 span {
   font-size: 20px;;
-  color: rgb(148, 247, 0);
+  color: rgb(127, 255, 148);
+  text-shadow: 2px 2px 5px rgba(0, 66, 25, 0.3);
 }
 
 .weather {
@@ -159,4 +169,26 @@ span {
 .img-cloud {
   margin: 0;
   width: inherit;
+}
+
+.owm-info {
+  user-select: none;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.295);
+}
+
+.footer-label {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-label:visited {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-label:hover {
+  color: rgba(255, 217, 236, 0.9);
+  text-shadow: 2px 2px 5px rgba(26, 19, 27, 0.295);
 }
