@@ -43,7 +43,7 @@ div {
 
 .location-input {
   display: flex;
-  margin:auto;
+  margin: auto;
   margin-top: 0;
   font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
   width: 350px;
@@ -120,7 +120,7 @@ div {
   margin-top: 20px;
 }
 
-label, span{
+label, span {
   font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: rgb(255, 255, 255);
@@ -129,7 +129,7 @@ label, span{
 }
 
 span {
-  font-size: 20px;;
+  font-size: 20px;
   color: rgb(127, 255, 148);
   text-shadow: 2px 2px 5px rgba(0, 66, 25, 0.3);
 }
